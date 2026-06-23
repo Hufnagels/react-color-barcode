@@ -71,7 +71,6 @@ Open `http://localhost:4173` in your browser. The demo lets you:
 
 ```bash
 npm install react-color-barcode
-
 ```
 
 ## Quick start
