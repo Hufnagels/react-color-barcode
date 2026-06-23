@@ -38,5 +38,22 @@
     "vite-plugin-dts": "^3.0.0",
     "vitest": "^2.0.0"
   },
+  "author": "Hufnagels",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hufnagels/react-color-barcode.git"
+  },
+  "keywords": [
+    "react",
+    "barcode",
+    "color",
+    "colored-barcode",
+    "svg",
+    "jsbarcode",
+    "code128",
+    "ean13",
+    "upc",
+    "export"
+  ],
   "license": "MIT"
 }

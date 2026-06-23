@@ -1,11 +1,17 @@
 # react-color-barcode
 The first React barcode component with **per-bar coloring**. Generate barcodes where each bar can be a different color — for branding, decoration, or artistic use — while optionally enforcing scannability through built-in contrast validation.
 
-![Example](https://img.shields.io/badge/formats-CODE128%20%7C%20CODE39%20%7C%20EAN13%20%7C%20UPC%20%7C%2020%2B-blue)
+![npm](https://img.shields.io/npm/v/react-color-barcode)
+
+
+![npm downloads](https://img.shields.io/npm/dm/react-color-barcode)
+
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-first-blue)
+
+![Formats](https://img.shields.io/badge/formats-CODE128%20%7C%20CODE39%20%7C%20EAN13%20%7C%20UPC%20%7C%2020%2B-blue)
 
 ## Demo
 
@@ -50,8 +56,9 @@ Open `http://localhost:4173` in your browser. The demo lets you:
 3. **Export without extra code.** Call `ref.current.toPng()` or `ref.current.download('barcode.jpg')`. No need for html2canvas, dom-to-image, or manual SVG serialization.
 4. **Smart color distribution.** The algorithm evenly distributes bars across colors with front-loaded remainders:
    ```plaintext
-                     123 bars, 5 colors → [25, 25, 25, 24, 24]
-                     10 bars, 3 colors  → [4, 3, 3]
+                        123 bars, 5 colors → [25, 25, 25, 24, 24]
+                        10 bars, 3 colors  → [4, 3, 3]
+                        
                      
                   
                
