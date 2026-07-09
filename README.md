@@ -58,13 +58,7 @@ Open `http://localhost:4173` in your browser. The demo lets you:
    ```plaintext
                         123 bars, 5 colors → [25, 25, 25, 24, 24]
                         10 bars, 3 colors  → [4, 3, 3]
-                        
-                     
-                  
-               
-            
-         
-      
+ 
    ```
 
 ## Install
