@@ -3,9 +3,7 @@ The first React barcode component with **per-bar coloring**. Generate barcodes w
 
 ![npm](https://img.shields.io/npm/v/react-color-barcode)
 
-
 ![npm downloads](https://img.shields.io/npm/dm/react-color-barcode)
-
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 
