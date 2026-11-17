@@ -1,12 +1,21 @@
+/*
+ * Készítő: CLAUDE (módosítás)
+ * Model: Opus 5.5
+ * Készült: 2026-06-23
+ * Verzió: 0.1.1
+ * Módosítás dátuma: 2026-11-17
+ * Módosítás leírása: Piros nélküli "Dark scannable" preset; a piros presetek jelölése
+ */
 import React, { useState, useCallback, useMemo, useRef } from 'react';
 import { ColorBarcode, validateColors, getBlockSizes, getBinaryString, parseBars, countBars } from '../src/index';
 import type { BarcodeFormat, BarcodeMode, ContrastResult, ColorBarcodeRef } from '../src/index';
 
 const PRESETS = [
-  { label: 'Dark scannable', colors: ['#1B1464', '#C0392B', '#0B6623', '#6C3483', '#1A5276'] },
+  // Red and warm bars pass the WCAG check but read as light under red-light scanners.
+  { label: 'Dark scannable', colors: ['#1B1464', '#0B6623', '#1A5276', '#2C3E50', '#145A32'] },
   { label: 'Vibrant mix', colors: ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'] },
   { label: 'Brand duo', colors: ['#E17055', '#0984E3'] },
-  { label: 'Mono red', colors: ['#C0392B'] },
+  { label: 'Mono red (passes contrast, risky on scanners)', colors: ['#C0392B'] },
   { label: 'Rainbow', colors: ['#E74C3C', '#E67E22', '#F1C40F', '#2ECC71', '#3498DB', '#9B59B6'] },
   { label: 'Light (fails scan)', colors: ['#FFEAA7', '#DFE6E9', '#DCDDE1'] },
 ];
